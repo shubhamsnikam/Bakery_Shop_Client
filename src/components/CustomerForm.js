@@ -9,7 +9,7 @@ const CustomerForm = () => {
 
   const fetchCustomers = async () => {
     try {
-      const res = await axios.get(`/api/customers`);
+      const res = await axios.get(`${process.env.REACT_APP_BACKEND_URL}/api/customers`);
       setCustomers(res.data);
     } catch (err) {
       console.error('Error fetching customers:', err);
