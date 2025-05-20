@@ -110,7 +110,7 @@ const ProductForm = () => {
     try {
       const confirmation = window.confirm("Are you sure you want to delete this product?");
       if (confirmation) {
-        await axios.delete(`/api/products/${id}`);
+        await axios.delete(`${process.env.REACT_APP_BACKEND_URL}/api/products/${id}`);
         fetchProducts();
         toast.info('Product Deleted Successfully');
       }
