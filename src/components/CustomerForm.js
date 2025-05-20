@@ -24,7 +24,7 @@ const CustomerForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post(`/api/customers`, form);
+      await axios.post(`${process.env.REACT_APP_BACKEND_URL}/api/customers`, form);
       setForm({ name: '', address: '', contact: '' });
       fetchCustomers();
       toast.success('Customer Added Successfully!');
