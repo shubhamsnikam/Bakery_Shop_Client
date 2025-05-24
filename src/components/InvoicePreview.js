@@ -20,8 +20,7 @@ const InvoicePreview = forwardRef(({ customer = {}, saleItems = [], products = [
       <div className="text-center mb-4">
 
         <h3 className="mt-2">इंद्रायणी बेकर्स, स्वीट्स अँड केक्स </h3>
-        <p> Indrayani Backers Khanapur Road Vita 415311 | Contact: +91 91460 06006</p>
-        <p> :9920445447 / 9987164165 </p>
+        <p> Indrayani Bakers Khanapur Road Vita 415311 | Contact: +91 91460 06006 </p>
         <hr />
       </div>
 
